@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s, ' . .. 103-commas * */ | sed 's/, $/\n/'
+ls -ap | grep -v '/\.$' | tr '\n' ',' | sed 's/,$/ /' | sed 's/,/, /g'
