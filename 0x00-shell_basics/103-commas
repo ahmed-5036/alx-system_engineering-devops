@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | grep -v '/\.$' | tr '\n' ',' | sed 's/,$/ /' | sed 's/,/, /g'
+find . -maxdepth 1 -print0 | sort -z | xargs -0 printf '%s, ' | sed 's/, $/\n/'
