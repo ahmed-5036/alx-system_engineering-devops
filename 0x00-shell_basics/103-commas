@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -print0 | sort -z | xargs -0 printf '%s, ' | sed 's/, $/\n/'
+printf '%s, ' . .. 103-commas * */ | sed 's/, $/\n/'
